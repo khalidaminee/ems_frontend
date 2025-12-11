@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import PassUseEffect from './PassUseEffect';
 
 function WorkOnUseEffectHook() {
     // Example 1
@@ -20,12 +21,21 @@ function WorkOnUseEffectHook() {
     const [total, setTotal] = useState(100);
 
 
+    // useEffect(() => {
+    //     console.log("After Render Count !");
+    // }, [count]);
+
+    // useEffect(() => {
+    //     console.log("After Render Total !");
+    // }, [total]);
+
+    //Example 4
     useEffect(() => {
-        console.log("After Render Count !");
+        
     }, [count]);
 
     useEffect(() => {
-        console.log("After Render Total !");
+      
     }, [total]);
 
   return ( 
@@ -37,12 +47,20 @@ function WorkOnUseEffectHook() {
         <button onClick={() => setCount(count + 1 )}>Update Count</button> */}
 
         {/* Example 3  */}
-        <h2>use Effect with condition hook</h2>
+        {/* <h2>use Effect with condition hook</h2>
             <h3> Count: { count } </h3>
             <button onClick={ () => setCount( count + 1 )}> Update Count </button>
 
             <h3> Total: { total } </h3>
-            <button onClick={ () => setTotal( total + 1)}> Update Total </button>
+            <button onClick={ () => setTotal( total + 1)}> Update Total </button> */}
+
+        {/* Example 4  */}
+        <h2> Use Effect as Props pass to Children</h2>
+        <PassUseEffect count={count} total={total}/> 
+         <button onClick={ () => setCount( count + 1 )}> Update Count </button>
+         <button onClick={ () => setTotal( total + 1)}> Update Total </button>
+
+
     </div>
   )
 }
