@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
-import { createEmployee } from '../services/EmployeeService';
-import {useNavigate} from 'react-router-dom'
+import React, {useEffect, useState} from 'react'
+import { createEmployee, getEmployee, updateEmployee } from '../services/EmployeeService';
+import {useNavigate, useParams } from 'react-router-dom'
 
 
 const AddEmployee = () => {
@@ -8,6 +8,7 @@ const AddEmployee = () => {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const navigator = useNavigate();
+    const {id} = useParams();
 
 const [errors, setErrors] = useState({
     firstName: '',
@@ -18,17 +19,37 @@ const handleLasttName = (e) => setLastName(e.target.value);
 
 const handleEmail = (e) => setEmail(e.target.value);
 
-
-function saveEmployee(e){
+useEffect(() => {
+    if(id){
+        getEmployee(id).then((response) => {
+            setFirstName(response.data.firstName);
+            setLastName(response.data.lastName);
+            setEmail(response.data.email);
+        }).catch((error)=>{
+            console.log(error);
+        })
+    }
+}, [id]);
+function saveOrUpdateEmployee(e){
     e.preventDefault();
 
     if(validatForm()){
         const employee = {firstName, lastName, email};
-         createEmployee(employee).then((response) => {
-    
-             console.log(employee); 
-             navigator('/employees');
-         });
+        if(id) {
+            updateEmployee(id, employee).then((response) => {
+                console.log(response.data);
+                navigator("/employees");
+            }).catch((error) => {
+                console.log(error);
+            })
+        }else{
+            
+            createEmployee(employee).then((response) => {
+       
+                console.log(employee); 
+                navigator('/employees');
+            });
+        }
     }
 }
 
@@ -58,12 +79,23 @@ function validatForm(){
     setErrors(errorCopy);
     return valid;
 }
+
+function pageTitle(){
+    if(id){
+        return <h2>Update Employee</h2>
+         
+    }else{
+        return  <h2>Add Employee</h2>
+    }
+}
   return (
     <div className='container'>
         <dir className="row">
             <div className="card col-md-6 offset-md-3 offset-md-3">
                 <div className="card-header">
-                    <h2>Add Employee</h2>
+                   {
+                    pageTitle()
+                   }
                 </div>
                 <div className="card-body">
                     <form>
@@ -105,7 +137,7 @@ function validatForm(){
                             />
                             { errors.email && <div className='invalid-feedback'>{errors.email} </div> }
                         </div>
-                        <button className="btn btn-success" type="submit" onClick={saveEmployee}>Submit</button>
+                        <button className="btn btn-success" type="submit" onClick={saveOrUpdateEmployee}>Submit</button>
                     </form>
                 </div>
             </div>
