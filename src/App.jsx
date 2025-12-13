@@ -8,6 +8,7 @@ import AddEmployee from './Components/AddEmployee'
 import PassProps from './Components/Props/PassProps'
 import ClassProps from './Components/Props/ClassProps'
 import WorkOnUseEffectHook from './Components/Hooks/WorkOnUseEffectHook'
+import WorkOnStyle from './Components/Styles Practice/workOnStyle'
 
 
 
@@ -34,8 +35,14 @@ function App() {
           <Route path='/get-props' element={<PassProps />}></Route> 
           <Route path ='get-class-props' element={<ClassProps />} ></Route>
 
+          {/* work on sytels methods */}
+
+          <Route path='/sytels-methods' element={ <WorkOnStyle />}></Route>
+
           {/* React Hooks Routes */}
          <Route path ='/use-effect' element={<WorkOnUseEffectHook />} ></Route>
+
+
 
 
         </Routes>
