@@ -9,6 +9,9 @@ import Style from "./style.module.css";
 // Example 5 
 import "./style.scss";
 
+// Example 6 
+import{ Button, Alert } from 'react-bootstrap'
+
 function WorkOnStyle() {
     // Example 3
     const headline = { 
@@ -34,6 +37,34 @@ function WorkOnStyle() {
 
         {/* Example 5 - Sass & Scss */}
         <h2 className='sass-primary'>Sass and <span>Scss</span> Methods</h2>
+
+        {/* Example 6- Using React Bootstrap  */}
+        <Button variant="primary">Primary</Button>
+        <Button variant="secondary">Secondary</Button>
+        <Button variant="success">Success</Button>
+        <Button variant="warning">Warning</Button>
+        <Button variant="danger">Danger</Button>
+        <Button variant="info">Info</Button>
+        <Button variant="light">Light</Button>
+        <Button variant="dark">Dark</Button>
+        <Button variant="link">Link</Button>
+
+        {/* Types of Alert */}
+        <Alert variant='success'>This is a success alert.</Alert>
+          {[
+          'primary',
+          'secondary',
+          'success',
+          'danger',
+          'warning',
+          'info',
+          'light',
+          'dark',
+        ].map((variant) => (
+          <Alert key={variant} variant={variant}>
+            This is a {variant} alert—check it out!
+          </Alert>
+        ))}
     </div>
   )
 }

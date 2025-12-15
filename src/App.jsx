@@ -46,9 +46,9 @@ function App() {
 
 
         </Routes>
-        
+
     
-        <FooterComponent />
+        {/* <FooterComponent /> */}
     
       </BrowserRouter>
      </> 
