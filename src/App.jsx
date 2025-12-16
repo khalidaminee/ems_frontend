@@ -9,6 +9,7 @@ import PassProps from './Components/Props/PassProps'
 import ClassProps from './Components/Props/ClassProps'
 import WorkOnUseEffectHook from './Components/Hooks/WorkOnUseEffectHook'
 import WorkOnStyle from './Components/Styles Practice/workOnStyle'
+import MapMethod from './Components/MapMethod'
 
 
 
@@ -42,6 +43,8 @@ function App() {
           {/* React Hooks Routes */}
          <Route path ='/use-effect' element={<WorkOnUseEffectHook />} ></Route>
 
+          {/* Using Map Method */}
+          <Route path='/map-method' element={ <MapMethod />}></Route>
 
 
 

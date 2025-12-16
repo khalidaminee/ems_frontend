@@ -19,6 +19,7 @@ function HeaderComponent() {
                   <a className="navbar-brand" href="/get-class-props">Class Props</a>
                   <a className="navbar-brand" href="/sytels-methods">Styles Methods</a>
                   <a className="navbar-brand" href="/use-effect">useEffect Hook</a>
+                  <a className="navbar-brand" href="/map-method">Map Method</a>
                 </div>
                
               </div>
