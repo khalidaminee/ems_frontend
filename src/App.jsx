@@ -10,6 +10,7 @@ import ClassProps from './Components/Props/ClassProps'
 import WorkOnUseEffectHook from './Components/Hooks/WorkOnUseEffectHook'
 import WorkOnStyle from './Components/Styles Practice/workOnStyle'
 import MapMethod from './Components/MapMethod'
+import BootstrapDataTables from './Components/DataTables/BootstrapDataTables'
 
 
 
@@ -45,6 +46,9 @@ function App() {
 
           {/* Using Map Method */}
           <Route path='/map-method' element={ <MapMethod />}></Route>
+
+          {/* Data Tables */}
+          <Route path='/data-table' element={ <BootstrapDataTables />}></Route>
 
 
 
