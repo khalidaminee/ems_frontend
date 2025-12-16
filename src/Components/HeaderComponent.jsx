@@ -21,7 +21,8 @@ function HeaderComponent() {
                   <a className="navbar-brand" href="/use-effect">useEffect Hook</a>
                   <a className="navbar-brand" href="/map-method">Map Method</a>
                   <a className="navbar-brand" href="/data-table">DataTables</a> */}
-                  <a className="navbar-brand" href="/nested-map">NestedMap</a>
+                  {/* <a className="navbar-brand" href="/nested-map">NestedMap</a> */}
+                  <a className="navbar-brand" href="/reusable-button">Reusable Button</a>
                 </div>
                
               </div>

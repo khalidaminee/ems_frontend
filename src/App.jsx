@@ -12,8 +12,7 @@ import WorkOnStyle from './Components/Styles Practice/workOnStyle'
 import MapMethod from './Components/MapMethod'
 import BootstrapDataTables from './Components/DataTables/BootstrapDataTables'
 import NestedMapMethod from './Components/Nested Map/NestedMapMethod'
-
-
+import ReusableComponents from './Components/ReusableComponents/ReusableComponents'
 
 
 function App() {
@@ -53,6 +52,7 @@ function App() {
 
           {/* Nested Map Function */}
           <Route path='/nested-map' element={ <NestedMapMethod />}></Route>
+          <Route path='/reusable-button' element={ <ReusableComponents />}></Route>
 
 
 
