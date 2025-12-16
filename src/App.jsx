@@ -11,6 +11,7 @@ import WorkOnUseEffectHook from './Components/Hooks/WorkOnUseEffectHook'
 import WorkOnStyle from './Components/Styles Practice/workOnStyle'
 import MapMethod from './Components/MapMethod'
 import BootstrapDataTables from './Components/DataTables/BootstrapDataTables'
+import NestedMapMethod from './Components/Nested Map/NestedMapMethod'
 
 
 
@@ -49,6 +50,9 @@ function App() {
 
           {/* Data Tables */}
           <Route path='/data-table' element={ <BootstrapDataTables />}></Route>
+
+          {/* Nested Map Function */}
+          <Route path='/nested-map' element={ <NestedMapMethod />}></Route>
 
 
 
