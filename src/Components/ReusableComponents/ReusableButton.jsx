@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default function ReusableButton({text, event}) {
-  return <button onClick={event}>{text}</button>
+export default function ReusableButton({text, onClick}) {
+  return <button onClick={onClick}>{text}</button>
 }

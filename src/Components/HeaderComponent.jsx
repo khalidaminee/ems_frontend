@@ -22,7 +22,12 @@ function HeaderComponent() {
                   <a className="navbar-brand" href="/map-method">Map Method</a>
                   <a className="navbar-brand" href="/data-table">DataTables</a> */}
                   {/* <a className="navbar-brand" href="/nested-map">NestedMap</a> */}
-                  <a className="navbar-brand" href="/reusable-button">Reusable Button</a>
+                  {/* <a className="navbar-brand" href="/reusable-button">Reusable Button</a> */}
+                  <a className="navbar-brand" href="/lifting-state-up">Lifting State Up</a>
+                  {/* <a className="navbar-brand" href="/pure-component">Pure Component </a> */}
+                  <a className="navbar-brand" href="/memo-method"> Memo Method </a>
+
+
                 </div>
                
               </div>

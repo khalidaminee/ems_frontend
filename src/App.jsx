@@ -13,6 +13,9 @@ import MapMethod from './Components/MapMethod'
 import BootstrapDataTables from './Components/DataTables/BootstrapDataTables'
 import NestedMapMethod from './Components/Nested Map/NestedMapMethod'
 import ReusableComponents from './Components/ReusableComponents/ReusableComponents'
+import ParentComponent from './Components/Lifting State Up/ParentComponent'
+import PureComponent from './Components/Pure Component/PureComponent'
+import MemoParent from './Components/Pure Component/Memo Method/MemoParent'
 
 
 function App() {
@@ -53,6 +56,14 @@ function App() {
           {/* Nested Map Function */}
           <Route path='/nested-map' element={ <NestedMapMethod />}></Route>
           <Route path='/reusable-button' element={ <ReusableComponents />}></Route>
+
+          {/* Lifting State Up */}
+          <Route path='/lifting-state-up' element={ <ParentComponent />}></Route>
+
+          {/* Pure Component in React */}
+          <Route path="/pure-component" element={ <PureComponent />}></Route>
+
+          <Route path="/memo-method" element={ <MemoParent />}></Route>
 
 
 

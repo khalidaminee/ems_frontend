@@ -16,8 +16,8 @@ function ReusableComponents() {
     <div className='text-center'>
       {/* Example 1: use a reusable button */}
       <h1>Reusable Button</h1>
-      <ReusableButton text="Click Me!" event={handleButton} />
-      <ReusableButton text="Submit!" event={handleButton} />
+      <ReusableButton text="Click Me!" onClick={handleButton} />
+      <ReusableButton text="Submit!" onClick={handleButton} />
 
       {/* Example 2: use a resuable list component */}
       <ReusableList items={countries}/>
