@@ -16,6 +16,8 @@ import ReusableComponents from './Components/ReusableComponents/ReusableComponen
 import ParentComponent from './Components/Lifting State Up/ParentComponent'
 import PureComponent from './Components/Pure Component/PureComponent'
 import MemoParent from './Components/Pure Component/Memo Method/MemoParent'
+import UseMemoHook from './Components/Hooks/UseMemo Hook/UseMemoHook'
+
 
 
 function App() {
@@ -64,6 +66,9 @@ function App() {
           <Route path="/pure-component" element={ <PureComponent />}></Route>
 
           <Route path="/memo-method" element={ <MemoParent />}></Route>
+          <Route path="/usememo-hook" element={ <UseMemoHook />}></Route>
+         
+          
 
 
 

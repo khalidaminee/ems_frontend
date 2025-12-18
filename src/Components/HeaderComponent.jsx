@@ -25,7 +25,8 @@ function HeaderComponent() {
                   {/* <a className="navbar-brand" href="/reusable-button">Reusable Button</a> */}
                   <a className="navbar-brand" href="/lifting-state-up">Lifting State Up</a>
                   {/* <a className="navbar-brand" href="/pure-component">Pure Component </a> */}
-                  <a className="navbar-brand" href="/memo-method"> Memo Method </a>
+                  {/* <a className="navbar-brand" href="/memo-method"> Memo Method </a> */}
+                  <a className="navbar-brand" href="/usememo-hook"> useMemo Hook </a>
 
 
                 </div>
