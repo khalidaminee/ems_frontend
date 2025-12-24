@@ -20,6 +20,7 @@ import UseMemoHook from './Components/Hooks/UseMemoHook/UseMemoHook'
 import CreateRef from './Components/Hooks/Ref/CreateRef'
 import UseRefHook from './Components/Hooks/Ref/UseRefHook'
 import ForwardRefHook from './Components/Hooks/Ref/ForwardRefHook'
+import ControledComponent from './Components/ControledComponent'
 
 
 
@@ -73,9 +74,11 @@ function App() {
           <Route path="/usememo-hook" element={ <UseMemoHook />}></Route>
 
           {/* creatRef hook in class component */}
-          <Route path="/create-ref" element={ <CreateRef/>}></Route>
+          {/* <Route path="/create-ref" element={ <CreateRef/>}></Route>
           <Route path="/use-ref-hook" element={ <UseRefHook />}></Route>
-          <Route path="/forward-ref-hook" element={ <ForwardRefHook />}></Route>
+          <Route path="/forward-ref-hook" element={ <ForwardRefHook />}></Route> */}
+
+          <Route path='/controlled-component' element={ <ControledComponent /> }></Route>
          
           
 

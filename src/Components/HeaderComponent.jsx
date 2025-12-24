@@ -26,10 +26,11 @@ function HeaderComponent() {
                   <a className="navbar-brand" href="/lifting-state-up">Lifting State Up</a>
                   {/* <a className="navbar-brand" href="/pure-component">Pure Component </a> */}
                   {/* <a className="navbar-brand" href="/memo-method"> Memo Method </a> */}
-                  <a className="navbar-brand" href="/usememo-hook"> useMemo Hook </a>
+                  {/* <a className="navbar-brand" href="/usememo-hook"> useMemo Hook </a>
                   <a className="navbar-brand" href="/create-ref"> CreateRef Hook </a>
                   <a className="navbar-brand" href="/use-ref-hook"> UseRef Hook</a>
-                  <a className="navbar-brand" href="/forward-ref-hook"> ForwardRef Hook</a>
+                  <a className="navbar-brand" href="/forward-ref-hook"> ForwardRef Hook</a> */}
+                  <a className="navbar-brand" href="/controlled-component">Controlled Component</a> 
 
 
                 </div>
