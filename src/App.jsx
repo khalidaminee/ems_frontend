@@ -21,6 +21,7 @@ import CreateRef from './Components/Hooks/Ref/CreateRef'
 import UseRefHook from './Components/Hooks/Ref/UseRefHook'
 import ForwardRefHook from './Components/Hooks/Ref/ForwardRefHook'
 import ControledComponent from './Components/ControledComponent'
+import UnControlledComponent from './Components/UnControlledComponent'
 
 
 
@@ -79,6 +80,7 @@ function App() {
           <Route path="/forward-ref-hook" element={ <ForwardRefHook />}></Route> */}
 
           <Route path='/controlled-component' element={ <ControledComponent /> }></Route>
+          <Route path='/uncontrolled-component' element={ <UnControlledComponent /> }></Route>
          
           
 
