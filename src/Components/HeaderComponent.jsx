@@ -6,7 +6,7 @@ function HeaderComponent() {
     navigator("/employees");
   }
   return (
-    <div>
+    <div className='responsive'>
         <header>
             <div className='navbar navbar-expand-lg navbar-dark bg-dark'>
               <div className="container-md">
@@ -27,6 +27,9 @@ function HeaderComponent() {
                   {/* <a className="navbar-brand" href="/pure-component">Pure Component </a> */}
                   {/* <a className="navbar-brand" href="/memo-method"> Memo Method </a> */}
                   <a className="navbar-brand" href="/usememo-hook"> useMemo Hook </a>
+                  <a className="navbar-brand" href="/create-ref"> CreateRef Hook </a>
+                  <a className="navbar-brand" href="/use-ref-hook"> UseRef Hook</a>
+                  <a className="navbar-brand" href="/forward-ref-hook"> ForwardRef Hook</a>
 
 
                 </div>

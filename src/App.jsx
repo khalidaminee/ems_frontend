@@ -16,7 +16,11 @@ import ReusableComponents from './Components/ReusableComponents/ReusableComponen
 import ParentComponent from './Components/Lifting State Up/ParentComponent'
 import PureComponent from './Components/Pure Component/PureComponent'
 import MemoParent from './Components/Pure Component/Memo Method/MemoParent'
-import UseMemoHook from './Components/Hooks/UseMemo Hook/UseMemoHook'
+import UseMemoHook from './Components/Hooks/UseMemoHook/UseMemoHook'
+import CreateRef from './Components/Hooks/Ref/CreateRef'
+import UseRefHook from './Components/Hooks/Ref/UseRefHook'
+import ForwardRefHook from './Components/Hooks/Ref/ForwardRefHook'
+
 
 
 
@@ -26,7 +30,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <HeaderComponent />
+        <HeaderComponent  />
         <Routes>
           {/* //localhost:3000/ */}
           <Route path='/' element={<EmployeesList />}></Route>
@@ -67,6 +71,11 @@ function App() {
 
           <Route path="/memo-method" element={ <MemoParent />}></Route>
           <Route path="/usememo-hook" element={ <UseMemoHook />}></Route>
+
+          {/* creatRef hook in class component */}
+          <Route path="/create-ref" element={ <CreateRef/>}></Route>
+          <Route path="/use-ref-hook" element={ <UseRefHook />}></Route>
+          <Route path="/forward-ref-hook" element={ <ForwardRefHook />}></Route>
          
           
 
