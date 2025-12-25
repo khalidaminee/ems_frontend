@@ -22,6 +22,7 @@ import UseRefHook from './Components/Hooks/Ref/UseRefHook'
 import ForwardRefHook from './Components/Hooks/Ref/ForwardRefHook'
 import ControledComponent from './Components/ControledComponent'
 import UnControlledComponent from './Components/UnControlledComponent'
+import HOC from './Components/HOC'
 
 
 
@@ -81,6 +82,7 @@ function App() {
 
           <Route path='/controlled-component' element={ <ControledComponent /> }></Route>
           <Route path='/uncontrolled-component' element={ <UnControlledComponent /> }></Route>
+          <Route path='/hoc' element={ <HOC /> }></Route>
          
           
 

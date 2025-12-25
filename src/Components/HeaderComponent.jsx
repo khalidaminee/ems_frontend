@@ -32,6 +32,7 @@ function HeaderComponent() {
                   <a className="navbar-brand" href="/forward-ref-hook"> ForwardRef Hook</a> */}
                   <a className="navbar-brand" href="/controlled-component">Controlled Component</a> 
                   <a className="navbar-brand" href="/uncontrolled-component">Uncontrolled Component</a> 
+                  <a className="navbar-brand" href="/hoc">HOC</a> 
 
 
                 </div>
