@@ -23,6 +23,8 @@ import ForwardRefHook from './Components/Hooks/Ref/ForwardRefHook'
 import ControledComponent from './Components/ControledComponent'
 import UnControlledComponent from './Components/UnControlledComponent'
 import HOC from './Components/HOC'
+import HOC2 from './Components/HOC2'
+import UseCallBackHook from './Components/Hooks/UseCallBackHook/UseCallBackHook'
 
 
 
@@ -83,6 +85,9 @@ function App() {
           <Route path='/controlled-component' element={ <ControledComponent /> }></Route>
           <Route path='/uncontrolled-component' element={ <UnControlledComponent /> }></Route>
           <Route path='/hoc' element={ <HOC /> }></Route>
+          {/* use Callback hook */}
+          <Route path='/useCallback' element={ <UseCallBackHook /> }></Route>
+     
          
           
 
@@ -93,6 +98,7 @@ function App() {
     
         {/* <FooterComponent /> */}
     
+        
       </BrowserRouter>
      </> 
   )
