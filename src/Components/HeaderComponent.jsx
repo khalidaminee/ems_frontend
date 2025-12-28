@@ -34,7 +34,8 @@ function HeaderComponent() {
                   <a className="navbar-brand" href="/uncontrolled-component">Uncontrolled Component</a> 
                   <a className="navbar-brand" href="/hoc">HOC</a>  */}
                   {/* <a className="navbar-brand" href="/useCallback">UseCallback</a>  */}
-                  <a className="navbar-brand" href="/useReducer">UseReducer</a> 
+                  {/* <a className="navbar-brand" href="/useReducer">UseReducer</a>  */}
+                  <a className="navbar-brand" href="/useContext">UseContext Hook</a> 
 
 
                 </div>
