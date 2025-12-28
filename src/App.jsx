@@ -25,6 +25,7 @@ import UnControlledComponent from './Components/UnControlledComponent'
 import HOC from './Components/HOC'
 import HOC2 from './Components/HOC2'
 import UseCallBackHook from './Components/Hooks/UseCallBackHook/UseCallBackHook'
+import UseReducerHook from './Components/Hooks/UseCallBackHook/UseReducerHook/UseReducerHook'
 
 
 
@@ -87,6 +88,7 @@ function App() {
           <Route path='/hoc' element={ <HOC /> }></Route>
           {/* use Callback hook */}
           <Route path='/useCallback' element={ <UseCallBackHook /> }></Route>
+          <Route path='/useReducer' element={ <UseReducerHook /> }></Route>
      
          
           
