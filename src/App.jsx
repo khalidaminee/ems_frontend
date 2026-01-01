@@ -30,6 +30,7 @@ import UseContextHook from './Components/Hooks/UseContextHook/UseContextHook'
 import ContextAPI from './Components/Hooks/Context API/ContextAPI'
 import UseLayoutEffectHook from './Components/Hooks/UseLayoutEffectHook/UseLayoutEffectHook'
 import UseSyncExternalStoreHook from './Components/Hooks/UseSyncExternalStoreHook/UseSyncExternalStoreHook'
+import UseTransationHook from './Components/Hooks/UseTransationHook/UseTransationHook'
 
 
 
@@ -97,6 +98,7 @@ function App() {
           <Route path='/contextAPI' element={<ContextAPI />}></Route>
           <Route path='/useLayout-effect' element={<UseLayoutEffectHook />}></Route>
           <Route path='/useSyncEffectStore' element={<UseSyncExternalStoreHook />}></Route>
+          <Route path='/useTransation' element={<UseTransationHook />}></Route>
 
 
 
