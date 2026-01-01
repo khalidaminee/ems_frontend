@@ -37,6 +37,8 @@ function HeaderComponent() {
               {/* <a className="navbar-brand" href="/useReducer">UseReducer</a>  */}
               {/* <a className="navbar-brand" href="/useContext">UseContext Hook</a>  */}
               <a className="navbar-brand" href="/contextAPI">Context API</a>
+              <a className="navbar-brand" href="/useLayout-effect">ِUseLayoutEffectHook</a>
+
 
 
             </div>
