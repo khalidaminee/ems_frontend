@@ -29,6 +29,7 @@ import UseReducerHook from './Components/Hooks/UseCallBackHook/UseReducerHook/Us
 import UseContextHook from './Components/Hooks/UseContextHook/UseContextHook'
 import ContextAPI from './Components/Hooks/Context API/ContextAPI'
 import UseLayoutEffectHook from './Components/Hooks/UseLayoutEffectHook/UseLayoutEffectHook'
+import UseSyncExternalStoreHook from './Components/Hooks/UseSyncExternalStoreHook/UseSyncExternalStoreHook'
 
 
 
@@ -95,6 +96,7 @@ function App() {
           <Route path='/useContext' element={<UseContextHook />}></Route>
           <Route path='/contextAPI' element={<ContextAPI />}></Route>
           <Route path='/useLayout-effect' element={<UseLayoutEffectHook />}></Route>
+          <Route path='/useSyncEffectStore' element={<UseSyncExternalStoreHook />}></Route>
 
 
 
