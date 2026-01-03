@@ -31,6 +31,8 @@ import ContextAPI from './Components/Hooks/Context API/ContextAPI'
 import UseLayoutEffectHook from './Components/Hooks/UseLayoutEffectHook/UseLayoutEffectHook'
 import UseSyncExternalStoreHook from './Components/Hooks/UseSyncExternalStoreHook/UseSyncExternalStoreHook'
 import UseTransationHook from './Components/Hooks/UseTransationHook/UseTransationHook'
+import UseDefferedHook from './Components/Hooks/UseDefferedHook/UseDefferedHook'
+import UseID from './Components/Hooks/UseID/useID'
 
 
 
@@ -99,6 +101,9 @@ function App() {
           <Route path='/useLayout-effect' element={<UseLayoutEffectHook />}></Route>
           <Route path='/useSyncEffectStore' element={<UseSyncExternalStoreHook />}></Route>
           <Route path='/useTransation' element={<UseTransationHook />}></Route>
+          <Route path='/useDefferred' element={<UseDefferedHook />}></Route>
+          <Route path='/useDefferred' element={<UseDefferedHook />}></Route>
+          <Route path='/useId' element={<UseID />}></Route>
 
 
 

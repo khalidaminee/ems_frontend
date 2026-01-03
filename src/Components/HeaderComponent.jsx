@@ -39,7 +39,9 @@ function HeaderComponent() {
               {/* <a className="navbar-brand" href="/contextAPI">Context API</a>
               <a className="navbar-brand" href="/useLayout-effect">ِUseLayoutEffectHook</a> */}
               {/* <a className="navbar-brand" href="/useSyncEffectStore">useSyncEffectStore</a> */}
-              <a className="navbar-brand" href="/useTransation">useTransation</a>
+              {/* <a className="navbar-brand" href="/useTransation">useTransation</a> */}
+              {/* <a className="navbar-brand" href="/useDefferred">useDefferred Hook</a> */}
+              <a className="navbar-brand" href="/useId">useId Hook</a>
 
 
 
