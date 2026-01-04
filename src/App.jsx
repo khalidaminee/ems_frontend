@@ -35,6 +35,7 @@ import UseDefferedHook from './Components/Hooks/UseDefferedHook/UseDefferedHook'
 import UseID from './Components/Hooks/UseID/useID'
 import CustomHook from './Components/Hooks/CustomHook/CustomHook'
 import FetchAPI from './Components/Hooks/Fetch API/fetchAPI'
+import APIPostMethod from './Components/Hooks/Fetch API/APIPostMethod'
 
 
 
@@ -108,6 +109,7 @@ function App() {
           <Route path='/useId' element={<UseID />}></Route>
           <Route path='/custom-hook' element={<CustomHook />}></Route>
           <Route path='/fetch-api' element={<FetchAPI />}></Route>
+          <Route path='/fetch-api-post' element={<APIPostMethod />}></Route>
 
 
 

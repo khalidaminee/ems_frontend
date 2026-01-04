@@ -43,7 +43,8 @@ function HeaderComponent() {
               {/* <a className="navbar-brand" href="/useDefferred">useDefferred Hook</a> */}
               {/* <a className="navbar-brand" href="/useId">useId Hook</a> */}
               {/* <a className="navbar-brand" href="/custom-hook">Custom Hook</a> */}
-              <a className="navbar-brand" href="/fetch-api">FetchAPI Hook</a>
+              {/* <a className="navbar-brand" href="/fetch-api">FetchAPI Hook</a> */}
+              <a className="navbar-brand" href="/fetch-api-post">FetchAPI POST method</a>
 
 
 
