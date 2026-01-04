@@ -33,6 +33,8 @@ import UseSyncExternalStoreHook from './Components/Hooks/UseSyncExternalStoreHoo
 import UseTransationHook from './Components/Hooks/UseTransationHook/UseTransationHook'
 import UseDefferedHook from './Components/Hooks/UseDefferedHook/UseDefferedHook'
 import UseID from './Components/Hooks/UseID/useID'
+import CustomHook from './Components/Hooks/CustomHook/CustomHook'
+import FetchAPI from './Components/Hooks/Fetch API/fetchAPI'
 
 
 
@@ -104,6 +106,8 @@ function App() {
           <Route path='/useDefferred' element={<UseDefferedHook />}></Route>
           <Route path='/useDefferred' element={<UseDefferedHook />}></Route>
           <Route path='/useId' element={<UseID />}></Route>
+          <Route path='/custom-hook' element={<CustomHook />}></Route>
+          <Route path='/fetch-api' element={<FetchAPI />}></Route>
 
 
 
