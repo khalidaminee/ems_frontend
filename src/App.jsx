@@ -36,6 +36,9 @@ import UseID from './Components/Hooks/UseID/useID'
 import CustomHook from './Components/Hooks/CustomHook/CustomHook'
 import FetchAPI from './Components/Hooks/Fetch API/fetchAPI'
 import APIPostMethod from './Components/Hooks/Fetch API/APIPostMethod'
+import APIPutMethod from './Components/Hooks/Fetch API/APIPutMethod'
+import APIDeletMethod from './Components/Hooks/Fetch API/APIDeletMethod'
+import GetDataAPI from './Components/Hooks/Fetch API/Axios/GetDataAPI'
 
 
 
@@ -110,6 +113,9 @@ function App() {
           <Route path='/custom-hook' element={<CustomHook />}></Route>
           <Route path='/fetch-api' element={<FetchAPI />}></Route>
           <Route path='/fetch-api-post' element={<APIPostMethod />}></Route>
+          <Route path='/fetch-api-put' element={<APIPutMethod />}></Route>
+          <Route path='/fetch-api-delete' element={<APIDeletMethod />}></Route>
+          <Route path='/axios-api' element={<GetDataAPI />}></Route>
 
 
 

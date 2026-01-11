@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 function HeaderComponent() {
   const navigator = useNavigate();
   const home = () => {
@@ -44,7 +44,11 @@ function HeaderComponent() {
               {/* <a className="navbar-brand" href="/useId">useId Hook</a> */}
               {/* <a className="navbar-brand" href="/custom-hook">Custom Hook</a> */}
               {/* <a className="navbar-brand" href="/fetch-api">FetchAPI Hook</a> */}
-              <a className="navbar-brand" href="/fetch-api-post">FetchAPI POST method</a>
+              {/* <a className="navbar-brand" href="/fetch-api-post">FetchAPI POST method</a> */}
+              {/* <a className="navbar-brand" href="/fetch-api-put">FetchAPI PUT method</a> */}
+              {/* <a className="navbar-brand" href="/fetch-api-delete">FetchAPI Delete method</a> */}
+              {/* <a className="navbar-brand" href="/axios-api">axios FetchAPI </a> */}
+              <Link to={"/axios-api"} className='navbar-brand'>Axios FetchAPI</Link>
 
 
 
